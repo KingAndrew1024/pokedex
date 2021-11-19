@@ -28,6 +28,8 @@ export class PokedexServiceMock implements IPokedexService {
     return new Observable((s) => s.next({}));
   }
 
+  // this is used only to emulate a store
+  //Todo: Implement a store management module/library
   getStoredItems() {
     return {};
   }

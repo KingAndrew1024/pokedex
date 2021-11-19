@@ -11,10 +11,14 @@ import { IPokedexService } from '../contracts/pokedex-service';
 export class PokedexService implements IPokedexService {
   readonly serverUrl = 'https://pokeapi.co';
 
+  // this is used only to emulate a store
+  //Todo: Implement a store management module/library
   private storedItems: { [key: string]: any };
 
   constructor(private http: HttpClient) {}
 
+  // this is used only to emulate a store
+  //Todo: Implement a store management module/library
   getStoredItems(): { [key: string]: any } {
     return this.storedItems;
   }
