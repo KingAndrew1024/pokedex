@@ -1,0 +1,35 @@
+//todo: set variables to style form parent components
+
+:host([grid]) {
+  margin: 4px;
+
+  .item-wrapper {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+
+    ::ng-deep app-avatar {
+      --avatar-margin: 0 0 4px 0;
+      --avatar-border-radius: 0;
+    }
+  }
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--item-background, lightgray);
+  width: var(--item-width, auto);
+  padding: var(--item-padding, 0 0 8px 0);
+  color: #750caa;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  :host([grid]) {
+    .item-wrapper {
+      width: 120px;
+    }
+  }
+}

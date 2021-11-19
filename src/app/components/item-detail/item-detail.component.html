@@ -1,0 +1,35 @@
+<app-card>
+    <img [src]="details?.sprites?.front_default">
+    <div title>{{pokemonData?.name}}</div>
+    <!-- <div subtitle>{{selectedPokemon.name}}</div> -->
+    <div class="info">
+        <div class="attribute-list types">
+            Types
+            <ul>
+                <li *ngFor="let item of details?.types">
+                    {{item.type.name}}
+                </li>
+            </ul>
+        </div>
+        <div class="attribute-list abilities">
+            Abilities
+            <ul>
+                <li *ngFor="let item of details?.abilities">
+                    {{item.ability.name | replaceDash: '-':' '}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="stats-list">
+            <div class="stats-item">
+                <div class="skewed-left">Weight:</div>
+                <div class="skewed-right">{{details?.weight}}</div>
+            </div>
+            <div class="stats-item">
+                <div class="skewed-left">Experience:</div>
+                <div class="skewed-right">{{details?.base_experience}}</div>
+            </div>
+        </div>
+
+    </div>
+</app-card>

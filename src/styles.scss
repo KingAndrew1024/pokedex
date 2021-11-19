@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  background: url("src/assets/img/bg-pattern.jpeg");
+  backdrop-filter: blur(5px);
+}
+
+app-list {
+  .list-wrapper {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: scroll;
+  }
+}
+
+app-avatar {
+  .avatar-wrapper {
+    height: 100px;
+    width: 100px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: transform 0.1s cubic-bezier(0, 1.8, 1, 1.8);
+    --avatar-border-radius: 16px;
+    --avatar-margin: 8px auto 32px auto;
+  }
+
+  img {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}

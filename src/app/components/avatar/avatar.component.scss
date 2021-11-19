@@ -1,0 +1,8 @@
+.avatar-wrapper {
+  border: var(--avatar-border, 1px solid lightgray);
+  border-radius: var(--avatar-border-radius, 4px);
+  margin: var(--avatar-margin, 8px);
+  background: var(--avatar-background, white);
+  min-width: var(--avatar-min-width, 96px);
+  min-height: var(--avatar-min-height, 96px);
+}

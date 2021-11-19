@@ -1,0 +1,8 @@
+<app-list>
+    <app-item *ngFor="let item of pokemonList" [routerLink]="item.name" grid>
+        <app-avatar slot="start">
+            <img *ngIf="(item.details$ | async) as details" [src]="details?.sprites?.front_default">
+        </app-avatar>
+        <label>{{item.name}}</label>
+    </app-item>
+</app-list>

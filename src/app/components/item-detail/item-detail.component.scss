@@ -1,0 +1,74 @@
+//todo: set variables to style form parent components
+
+:host {
+  width: 50%;
+}
+
+img {
+  position: absolute;
+  margin: auto;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+
+.attribute-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 600;
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  li {
+    width: min-content;
+    margin-right: 4px;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 16px;
+    list-style: none;
+    text-align: center;
+    font-size: initial;
+    font-weight: initial;
+  }
+  &.types {
+    li {
+      background: #009908;
+    }
+  }
+  &.abilities {
+    li {
+      background: #7500db;
+    }
+  }
+}
+
+.stats-list {
+  max-width: 400px;
+
+  .stats-item {
+    display: flex;
+    background: #3fa4e8;
+    border-radius: 6px;
+    margin-top: 6px;
+  }
+  .skewed-left {
+    width: 77%;
+    padding: 4px;
+    border-radius: 6px 0 0 6px;
+    background: #0747a9;
+    color: white;
+    clip-path: polygon(
+      0px 0px,
+      0px calc(100% - 0px),
+      calc(100% - 16px) calc(100% - 0px),
+      calc(100% - 0px) 0px
+    );
+  }
+  .skewed-right {
+    width: 33%;
+    padding: 4px;
+  }
+}

@@ -1,0 +1,39 @@
+.card-wrapper {
+  min-width: var(--card-min-width, 200px);
+  max-width: var(--card-max-width, 100%);
+  background: var(--card-background, white);
+  border-radius: var(--card-border-radius, 8px);
+  box-shadow: var(--card-box-shadow, 0 0 4px 4px lightgray);
+
+  //todo: set variables to style form parent components
+  .img-wrapper {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    background: #f1fafd;
+    border-radius: 8px 8px 0 0;
+    background: url("src/assets/img/fire-bg.jpeg") no-repeat center;
+    background-size: cover;
+  }
+
+  //todo: set variables to style form parent components
+  .title,
+  .sub-title {
+    margin: 8px;
+  }
+
+  //todo: set variables to style form parent components
+  .title {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #0c45aa;
+  }
+
+  //todo: set variables to style form parent components
+  .content {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
