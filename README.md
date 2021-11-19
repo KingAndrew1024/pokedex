@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
+## Pokemon item list
+![image](https://user-images.githubusercontent.com/16911277/142568965-1027e8e8-eab0-4a1f-9282-76565f93f469.png)
+
+## Item Detail
+![image](https://user-images.githubusercontent.com/16911277/142569067-e9a8ade3-bae0-47e7-8f01-652ab003b83a.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
